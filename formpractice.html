@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form Practice</title>
+    <style>
+        body {font-family: sans-serif;}
+        legend {font-weight: bold;}
+    
+    </style>
+    </head>
+    <body>
+        <fieldset>
+        <legend>Registration Form</legend>
+        <form
+              method= ”post”
+              action= ”registration.php”
+              name= ”registration”>
+            <fieldset>
+                <legend>User Information</legend>
+            
+                <label>First Name:<br/><input type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="John"/></label>
+                <br/>
+                <label>Last Name:<br/><input type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Smith"/></label>
+                <br/>
+                <label>Email:<br/><input type="email"
+                   name="email"
+                   id="email"
+                   placeholder="JohnSmith@email.com"
+                   />
+                </label>
+                <br/>
+                <label>Username:<br/><input type="text"
+                   name="username:"
+                   id="username"
+                   placeholder="JohnSmith123"
+                   max-length="30"
+                   />
+                </label>(no longer than 30 characters)
+                <br/>
+            
+                <label>Password:<br/><input type="password"
+                   name="password1:"
+                   id="password1"
+                   placeholder="Password"
+                    max-length="20"
+                   />
+                </label> (no longer than 20 characters)
+                    <br/>
+                <label>Confirm Password:<br/><input type="password2"
+                   name="password2"
+                   id="password2"
+                   placeholder="Confirm Password"
+                   max-length="20"
+                   />
+                </label>
+                </fieldset>
+        <br/>
+            <fieldset>
+                <legend>Communication Preferences</legend>
+                <label>Favorite Day of the Week:</label><br/>
+                <select name="favoriteday">
+                    <option value="sunday">Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+                <br/>
+                <label>What Social Media do you use? </label><br/>
+                <label><input type="checkbox" 
+                       name="socailmedia" 
+                       id="workday"
+                       value="Facebook" />Facebook
+                        </label>
+                <label><input type="checkbox" 
+                       name="socailmedia" 
+                       id="workday"
+                       value="Instagram" />Instagram
+                        </label><br/>
+                <label><input type="checkbox" 
+                       name="socailmedia" 
+                       id="workday"
+                       value="Twitter" />Twitter
+                        </label>
+                <label><input type="checkbox" 
+                       name="socailmedia" 
+                       id="workday"
+                       value="YouTube" />YouTube
+                        </label><br/>
+                <label><input type="checkbox" 
+                       name="socailmedia" 
+                       id="workday"
+                       value="Pinterest" />Pinterest
+                        </label>
+                <label><input type="checkbox" 
+                       name="socailmedia" 
+                       id="workday"
+                       value="Snapchat" />Snapchat
+                        </label><br/>
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <legend>Mailing Information</legend>
+                <label>Address 1:<br/><input type="text"
+                           name="AddressLine1"
+                           id="mailing"
+                            placeholder="123 First St"
+                            /></label><br/>
+                <label>Address 2:<br/><input type="text"
+                           name="AddressLine2"
+                           id="mailing"
+                           placeholder="Apt. 23"
+                            /></label><br/>
+                <label>City:<br/><input type="text"
+                           name="City"
+                           id="mailing"
+                            placeholder="Smallsville"
+                            /></label><br/>
+                <label>State:<br/><select name="State">
+                    <option value="AK">AK</option>
+                    <option value="AL">AL</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                    </select></label><br/>
+                    <label>Zip Code:<br/><input type="number"
+                           name="ZipCode"
+                           id="mailing"
+                            placeholder="12345"
+                            /></label><br/>
+                <br/>
+            </fieldset>
+            <br/>
+               <label>Comments: 
+                   <br/><textarea
+                    name="comments" 
+                    cols="40" 
+                    rows="6"
+                    maxlength="500"
+                    placeholder="Tell us anything we need to know." 
+                    />
+                </label>
+        </form>
+        </fieldset>
+
+    </body>
+</html>
