@@ -64,7 +64,7 @@ img.img-responsive {
 }
 
 .bio-container {
-    display: -webkit-flex;
+    display:inline-flex;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
@@ -100,10 +100,23 @@ order: 3;
 }
 
 @media screen and (max-width: 30em)
-{
+{.bio-container {
+    flex-direction: row;
+  }
+  
+  .bio-title, .bio-pic, .bio-description {
+    flex: 1 100%;
+  }
+  
+  .bio-pic {
+    order: 3;
+  }
+  
+  .bio-description {
+    order: 2;
+  }
 
 }
-
 
 @media screen and (min-width:30.01em) and (max-width: 48em)
 {.bio-container {
@@ -130,11 +143,6 @@ order: 3;
 }
 
 @media screen and (min-width:60.01em) and (max-width: 80em)
-{
 
-}
 
 @media screen and (min-width:80.01em) 
-{
-
-}
