@@ -2,70 +2,78 @@
 <html>
 <head>
     <title>Registration Form Practice</title>
-    <style>
-        body {font-family: sans-serif;}
-        legend {font-weight: bold;}
-    
-    </style>
+    <link rel="stylesheet" href="formstyle.css">
     </head>
     <body>
-        <fieldset>
-        <legend>Registration Form</legend>
+       <h1>Registration Form</h1>
+        <br/>
         <form
               method= ”post”
               action= ”registration.php”
               name= ”registration”>
             <fieldset>
                 <legend>User Information</legend>
-            
-                <label>First Name:<br/><input type="text"
+            <div class="form-group">
+                <label>First Name:</label>
+                    <div class="form-control"><input type="text"
                     name="firstname"
                     id="firstname"
-                    placeholder="John"/></label>
-                <br/>
-                <label>Last Name:<br/><input type="text"
+                   placeholder="John"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <div class="form-control"><input type="text"
                     name="lastname"
                     id="lastname"
-                    placeholder="Smith"/></label>
-                <br/>
-                <label>Email:<br/><input type="email"
+                    placeholder="Smith"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <div class="form-control"><input type="email"
                    name="email"
                    id="email"
                    placeholder="JohnSmith@email.com"
                    />
-                </label>
-                <br/>
-                <label>Username:<br/><input type="text"
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Username:</label>
+                    <div class="form-control"><input type="text"
                    name="username:"
                    id="username"
                    placeholder="JohnSmith123"
                    max-length="30"
-                   />
-                </label>(no longer than 30 characters)
-                <br/>
-            
-                <label>Password:<br/><input type="password"
+                   />(no longer than 30 characters)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <div class="form-control"><input type="password"
                    name="password1:"
                    id="password1"
                    placeholder="Password"
                     max-length="20"
-                   />
-                </label> (no longer than 20 characters)
-                    <br/>
-                <label>Confirm Password:<br/><input type="password2"
+                   />(no longer than 20 characters)
+                </div>
+                </div>
+                <div class="form-group"><label>Confirm Password:</label>
+                    <div class="form-control"><input type="password2"
                    name="password2"
                    id="password2"
                    placeholder="Confirm Password"
                    max-length="20"
-                   />
-                </label>
+                   /></div>
+                </div>
                 </fieldset>
         <br/>
             <fieldset>
                 <legend>Communication Preferences</legend>
-                <label>Favorite Day of the Week:</label><br/>
+                <div class="form-group"><label>Favorite Day of the Week:</label>
+                    <div class="form-control">
                 <select name="favoriteday">
-                    <option value="sunday">Sunday</option>
+                    <option value="Sunday">Sunday</option>
                     <option value="Monday">Monday</option>
                     <option value="Tuesday">Tuesday</option>
                     <option value="Wednesday">Wednesday</option>
@@ -73,58 +81,42 @@
                     <option value="Friday">Friday</option>
                     <option value="Saturday">Saturday</option>
                 </select>
-                <br/>
-                <label>What Social Media do you use? </label><br/>
-                <label><input type="checkbox" 
-                       name="socailmedia" 
-                       id="workday"
-                       value="Facebook" />Facebook
-                        </label>
-                <label><input type="checkbox" 
-                       name="socailmedia" 
-                       id="workday"
-                       value="Instagram" />Instagram
-                        </label><br/>
-                <label><input type="checkbox" 
-                       name="socailmedia" 
-                       id="workday"
-                       value="Twitter" />Twitter
-                        </label>
-                <label><input type="checkbox" 
-                       name="socailmedia" 
-                       id="workday"
-                       value="YouTube" />YouTube
-                        </label><br/>
-                <label><input type="checkbox" 
-                       name="socailmedia" 
-                       id="workday"
-                       value="Pinterest" />Pinterest
-                        </label>
-                <label><input type="checkbox" 
-                       name="socailmedia" 
-                       id="workday"
-                       value="Snapchat" />Snapchat
-                        </label><br/>
+                    </div>
+                </div>
+                <div class="form-group"><label>What Social Media do you use?</label>
+                     <div class="form-control">
+            <label><input type="checkbox" name="socialMedia" id="socialMedia" value="Facebook" />Facebook</label>
+            <label><input type="checkbox" name="socialMedia" id="socialMedia" value="Snapchat" />Snapchat</label>
+            <label><input type="checkbox" name="socialMedia" id="socialMedia" value="Twitter" />Twitter</label>
+            <label><input type="checkbox" name="socialMedia" id="socialMedia" value="Instagram" />Instagram</label>
+            <label><input type="checkbox" name="socialMedia" id="socialMedia" value="Pinterest" />Pinterest</label>
+            </div></div>
                 </fieldset>
                 <br/>
                 <fieldset>
                     <legend>Mailing Information</legend>
-                <label>Address 1:<br/><input type="text"
+                    <div class="form-group"><label>Address 1:</label>
+                        <div class="form-control"><input type="text"
                            name="AddressLine1"
                            id="mailing"
                             placeholder="123 First St"
-                            /></label><br/>
-                <label>Address 2:<br/><input type="text"
+                           /></div></div>
+                    <div class="form-group">
+                        <label>Address 2:</label> 
+                        <div class="form-control"><input type="text"
                            name="AddressLine2"
                            id="mailing"
                            placeholder="Apt. 23"
-                            /></label><br/>
-                <label>City:<br/><input type="text"
+                           /></div></div>
+                <div class="form-group">
+                    <label>City:</label>
+                    <div class="form-control"><input type="text"
                            name="City"
                            id="mailing"
                             placeholder="Smallsville"
-                            /></label><br/>
-                <label>State:<br/><select name="State">
+                            /></div></div>
+                    <div class="form-group"><label>State:</label>
+                        <div class="form-control"><select name="State">
                     <option value="AK">AK</option>
                     <option value="AL">AL</option>
                     <option value="AZ">AZ</option>
@@ -175,24 +167,25 @@
                     <option value="WV">WV</option>
                     <option value="WI">WI</option>
                     <option value="WY">WY</option>
-                    </select></label><br/>
-                    <label>Zip Code:<br/><input type="number"
+                            </select></div></div>
+                    <div class="form-group"><label>Zip Code:</label>
+                        <div class="form-control"><input type="number"
                            name="ZipCode"
                            id="mailing"
                             placeholder="12345"
-                            /></label>
+                         /></div></div>
             </fieldset>
-               <label>Comments:<br/>
-                   <textarea 
+            <br/>
+            <div class="form-group"><label>Comments:</label>
+                   <div class="form-control"><textarea 
                              name="comments"
                              id="comments"
                              maxlength="500"
                              rows="6"
                              cols="40"
                              placeholder="Please let us know any comments you have."></textarea>
-                </label>
+                </div></div>
         </form>
-        </fieldset>
 
     </body>
 </html>
