@@ -10,6 +10,14 @@ body {
   padding: 1.5rem;
 }
 
+select {font-size: 18px;}
+
+button {
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px}
+
 
 form {
   width: 100%;
