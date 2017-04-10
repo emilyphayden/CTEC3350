@@ -2,25 +2,21 @@
 <html>
 
     <head>
-        <title>BEM Stylesheet Organization</title>
+        <title>BEM Components</title>
         <meta name="description" content="This is an assignment for BEM">
-        <style>
-            body {background-color: cadetblue}
-            .bio-container {border: black solid 3px; padding: 0px 20px 10px 20px; margin:20px}
-            .bio-title {color:yellow;}
-            .faq-title {color: yellow;}
-            .faq-container {border: black solid 3px;padding: 0px 20px 10px 20px;margin:20px}
-            .gallery-title {color: yellow;}
-            .gallery-container {border: black solid 3px;padding: 0px 20px 10px 20px;margin:20px}
-            .drinks-title {color: yellow;}
-            .drinks-container {border: black solid 3px;padding: 0px 20px 10px 20px;margin:20px}
-            .activities-title {color: yellow;}
-            .activities-container {border: black solid 3px;padding: 0px 10px 5px 20px;margin:20px}
-
-        </style>
+        <link rel="stylesheet" href="bem-styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
     </head>
     <body>
-
+        <header>
+            <nav> 
+            <a href="bem-styles.css"> CSS </a> |
+            <a href="BEM-Stylesheet-Organization.html"> Componets </a> |
+            <a href="BEM.html"> BEM </a>
+            </nav>
+        </header>
+        <br/>
 
 
         <img src="bio-component.png" alt="Bio Component Diagram" height="405" width="720">
@@ -29,8 +25,9 @@
 
           <h1 class="bio-title">Bio Component</h1>
 
-        <img class="bio-pic" src="bio-pic.png" alt="Red Coffee Cup" height="300" width="276">
-
+        <div class="bio-pic">
+          <img src="bio-pic.png" alt="Red Coffee Cup">
+          </div>
         <p class="bio-description">Julio Perez is the owner of the JavaJam Coffee House, a gourmet coffee shop that serves snacks, coffee, tea, and soft drinks. Local folk music performances and poetry readings are held a few nights during the week. The customers of JavaJam are mainly college students and young professionals. Julio would like a web presence for his shop that will display his services and provide a calendar for the performances. He would like a home page, menu page, music performance schedule page, and a job opportunities page.
         </p>
         </div>
@@ -40,8 +37,10 @@
 
         <div class="faq-container">
         <h1 class="faq-title">FAQ</h1>
+            <div class="faq-pic">
         <img src="faq-pic.jpg" alt="FAQ Coffee Shop Pic" height="200" width="200">
-        <ul>
+            </div>
+        <ul class="faq-content">
             <li>What are your days and hours of operation?
                 <br/> 8:00 AM-10:00 PM Monday-Saturday
             </li>
@@ -57,12 +56,16 @@
 
         <div class="gallery-container">
         <h1 class="gallery-title">Image Gallery</h1>
-
-        <img src="gallery-pic1.jpg" alt="Gallery Pic 1" height="300" width="300">
-
-        <img src="gallery-pic2.jpg" alt="Gallery Pic 2" height="300" width="300">
-
-        <img src="gallery-pic3.jpg" alt="Gallery Pic 3" height="300" width="300">
+            
+            <div class="gallery-pic1">
+        <img src="gallery-pic1.jpg" alt="Gallery Pic 1" height="210" width="210">
+            </div>
+            <div class="gallery-pic2">
+        <img src="gallery-pic2.jpg" alt="Gallery Pic 2" height="210" width="210">
+            </div>
+                <div class="gallery-pic3">
+        <img src="gallery-pic3.jpg" alt="Gallery Pic 3" height="210" width="210">
+            </div>
         </div>
 
         <img src="drinks.png" alt="Drinks Diagram" height="405" width="720">
@@ -102,18 +105,21 @@
         <div class="activities-container">
         <h1 class="activities-title">Activities</h1>
 
-        <img src="activities-pic.png" alt="Activities" height="200" width="200">
-        <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p>
-        <img src="activities-pic.png" alt="Activities" height="200" width="200">
-        <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p>
-        <img src="activities-pic.png" alt="Activities" height="200" width="200">
-        <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p>
-        <img src="activities-pic.png" alt="Activities" height="200" width="200">
-        <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p>
-        <img src="activities-pic.png" alt="Activities" height="200" width="200">
-        <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p>
-        <img src="activities-pic.png" alt="Activities" height="200" width="200">
-        <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p>
+        <div class="event1">
+        <img src="activities-pic.png" alt="Activities" height="160" width="160">
+        <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
+        <div class="event2">
+            <img src="activities-pic.png" alt="Activities" height="160" width="160">
+            <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
+        <div class="event3">
+            <img src="activities-pic.png" alt="Activities" height="160" width="160">
+            <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
+        <div class="event4">
+            <img src="activities-pic.png" alt="Activities" height="160" width="160">
+            <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
+        <div class="event5">
+            <img src="activities-pic.png" alt="Activities" height="160" width="160">
+            <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
         </div>
     </body>
 </html>
