@@ -162,7 +162,30 @@ pre {
     height: auto;
     padding: 1rem;
 }
+.drinks-container {
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    align-items: center;
+    align-content: flex-start;
+    margin:
+}
+.drinks-title {
+    flex: 1 100%;
+    box-sizing: border-box;
+    background-color:#658384;
+    padding: 0.75rem;
+}
 
+.drinks-description ul li {
+    list-style-type: none;
+}
 .activities-container {display: -webkit-flex;
     display: flex;
     
