@@ -17,9 +17,14 @@
             </nav>
         </header>
         <br/>
+<h1 class="title">Components</h1>
 
-
-        <img src="bio-component.png" alt="Bio Component Diagram" height="405" width="720">
+        <img src="bio-component.png" alt="Bio Component Diagram">
+        <h3>Classes</h3>
+        <p> .bio-container<br/>
+            .bio-title<br/>
+            .bio-pic<br/>
+            .bio-description</p>
 
       <div class="bio-container">
 
@@ -31,9 +36,37 @@
         <p class="bio-description">Julio Perez is the owner of the JavaJam Coffee House, a gourmet coffee shop that serves snacks, coffee, tea, and soft drinks. Local folk music performances and poetry readings are held a few nights during the week. The customers of JavaJam are mainly college students and young professionals. Julio would like a web presence for his shop that will display his services and provide a calendar for the performances. He would like a home page, menu page, music performance schedule page, and a job opportunities page.
         </p>
         </div>
+        <div class="container-components">
+        <pre>
+        <code>&lt;div class="bio-container"&gt;
 
+          &lt;h1 class="bio-title"&gt;Bio Component&lt;/h1&gt;
 
-        <img src="FAQNEW.png" alt="FAQ Section Diagram" height="405" width="720">
+        &lt;div class="bio-pic"&gt;
+          &lt;img src="bio-pic.png" alt="Red Coffee Cup"&gt;
+          &lt;/div&gt;
+        &lt;p class="bio-description"&gt;Julio Perez is the owner of the JavaJam Coffee House, 
+        a gourmet coffee shop that serves snacks, coffee, tea, and soft drinks.
+        Local folk music performances and poetry readings are held a few nights
+        during the week. The customers of JavaJam are mainly college students and
+        young professionals. Julio would like a web presence for his shop that
+        will display his services and provide a calendar for the performances. He
+        would like a home page, menu page, music performance schedule page, and a
+        job opportunities page.
+        &lt;/p&gt;
+        &lt;/div&gt;
+        </code></pre>
+            </div>
+
+<br/>
+        <br/>
+        <img src="FAQNEW.png" alt="FAQ Section Diagram">
+        
+        <h3>Classes</h3>
+        <p> .faq-container<br/>
+            .faq-title<br/>
+            .faq-content<br/>
+        </p>
 
         <div class="faq-container">
         <h1 class="faq-title">FAQ</h1>
@@ -51,78 +84,185 @@
 
         </ul>
         </div>
+        <div class="container-components">
+        <pre>
+        <code>
+        &lt;div class="faq-container"&gt; 
+        &lt;h1 class="faq-title"&gt;FAQ&lt;/h1&gt;
+        &lt;ul class="faq-content"&gt; 
+        &lt;li&gt;What are your days and hours of operation? 
+            &lt;br/&gt; 8:00 AM-10:00 PM Monday-Saturday &lt;/li&gt;
+        &lt;li&gt;What kind of drinks do you serve? 
+            &lt;br/&gt; Here is a link to our menu &lt;/li&gt;
+        &lt;li&gt;How can I perform at the coffee shop? 
+            &lt;br/&gt; Please contact our manager to set up a time.&lt;/li&gt;
+        &lt;li&gt;Can I sell tickets to my performences at JavaJam? 
+            &lt;br/&gt; Yes, but a portion will be for JavaJam.&lt;/li&gt;
+        &lt;/ul&gt; 
+        &lt;/div&gt;
+        </code></pre>
+        </div>
+<br/>
+        <br/>
 
-
-        <img src="galleryNEW.png" alt="Image Gallery Diagram" height="405" width="720">
+        <img src="galleryNEW.png" alt="Image Gallery Diagram">
+        <h3>Classes</h3>
+        <p> .gallery-container<br/>
+            .gallery-title<br/>
+            .gallery-pic<br/>
+        </p>
 
         <div class="gallery-container">
         <h1 class="gallery-title">Image Gallery</h1>
             
             <div class="gallery-pic">
-        <img src="gallery-pic1.jpg" alt="Gallery Pic 1" height="210" width="210">
+        <img src="gallery-pic1.jpg" alt="Gallery Pic 1">
             </div>
             <div class="gallery-pic">
-        <img src="gallery-pic2.jpg" alt="Gallery Pic 2" height="210" width="210">
+        <img src="gallery-pic2.jpg" alt="Gallery Pic 2">
             </div>
                 <div class="gallery-pic">
-        <img src="gallery-pic3.jpg" alt="Gallery Pic 3" height="210" width="210">
+        <img src="gallery-pic3.jpg" alt="Gallery Pic 3">
             </div>
         </div>
-
-        <img src="drinksNEW.png" alt="Drinks Diagram" height="405" width="720">
+        <div class="container-components">
+        <pre>
+        <code>
+        &lt;div class="gallery-container"&gt; 
+        &lt;h1 class="gallery-title"&gt;Image Gallery&lt;/h1&gt;
+        
+        &lt;div class="gallery-pic"&gt; 
+            &lt;img src="gallery-pic1.jpg" alt="Gallery Pic 1"&gt; 
+        &lt;/div&gt; 
+        &lt;div class="gallery-pic"&gt; 
+            &lt;img src="gallery-pic2.jpg" alt="Gallery Pic 2"&gt; 
+        &lt;/div&gt; 
+        &lt;div class="gallery-pic"&gt; 
+            &lt;img src="gallery-pic3.jpg" alt="Gallery Pic 3"&gt; 
+        &lt;/div&gt; 
+        &lt;/div&gt;
+        </code></pre>
+        </div>
+<br/>
+        <br/>
+        <img src="drinksNEW.png" alt="Drinks Diagram">
+        <h3>Classes</h3>
+        <p> .drinks-container<br/>
+            .drinks-title<br/>
+            .drinks-description<br/>
+            .drinks-types</p>
 
            <div class="drinks-container">
             <h1 class="drinks-title">Drinks</h1>
 
         <div class="drinks-description">
                <ul>
-            <strong><li>Hot Coffee</li></strong>
-        <br/>
+            <strong class="drinks-types"><li>Hot Coffee</li></strong>
             <li>Coffee</li>
             <li>Espressso</li>    
             <li>Americano</li>
                    <br/>
-            <strong><li>Cold Coffee</li></strong>
-                   <br/>
+            <strong class="drinks-types"><li>Cold Coffee</li></strong>
             <li>Iced Coffee</li>
             <li>Frapaccino</li>
             <li>Iced Caffé Mocha</li>
                    <br/>
-            <strong><li>Tea</li></strong>   
-                   <br/>
+            <strong class="drinks-types"><li>Tea</li></strong>   
             <li>Earl Grey</li>
             <li>Oolong</li>
             <li>Chamomile</li>
                    <br/>
-            <strong><li>Soft Drinks</li></strong>
-                   <br/>
+            <strong class="drinks-types"><li>Soft Drinks</li></strong>
             <li>Coke</li>   
             <li>Sprite</li>
             <li>Fanta</li>    
         </ul>
             </div>
             </div>
-
-        <img src="activitesNEW.png" alt="Activities Diagram" height="405" width="720">
+        <div class="container-components">
+        <pre>
+        <code>
+        &lt;div class="drinks-container"&gt; 
+        &lt;h1 class="drinks-title"&gt;Drinks&lt;/h1&gt; 
+            &lt;div class="drinks-description"&gt; 
+        &lt;ul&gt; 
+        &lt;strong class="drinks-types"&gt;&lt;li&gt;Hot Coffee&lt;/li&gt;&lt;/strong&gt; 
+            &lt;li&gt;Coffee&lt;/li&gt; 
+            &lt;li&gt;Espressso&lt;/li&gt; 
+            &lt;li&gt;Americano&lt;/li&gt; 
+        &lt;br/&gt; 
+        &lt;strong class="drinks-types"&gt;&lt;li&gt;Cold Coffee&lt;/li&gt;&lt;/strong&gt; 
+            &lt;li&gt;Iced Coffee&lt;/li&gt; 
+            &lt;li&gt;Frapaccino&lt;/li&gt; 
+            &lt;li&gt;Iced Caff&eacute; Mocha&lt;/li&gt; 
+        &lt;br/&gt; 
+        &lt;strong class="drinks-types"&gt;&lt;li&gt;Tea&lt;/li&gt;&lt;/strong&gt; 
+            &lt;li&gt;Earl Grey&lt;/li&gt; 
+            &lt;li&gt;Oolong&lt;/li&gt; 
+            &lt;li&gt;Chamomile&lt;/li&gt; 
+        &lt;br/&gt; 
+        &lt;strong class="drinks-types"&gt;&lt;li&gt;Soft Drinks&lt;/li&gt;&lt;/strong&gt; 
+            &lt;li&gt;Coke&lt;/li&gt; 
+            &lt;li&gt;Sprite&lt;/li&gt; 
+            &lt;li&gt;Fanta&lt;/li&gt; 
+        &lt;/ul&gt; 
+        &lt;/div&gt; 
+        &lt;/div&gt;
+        </code>
+        </pre>
+        </div>
+<br/>
+        <br/>
+        <img src="activitesNEW.png" alt="Activities Diagram">
+        <h3>Classes</h3>
+        <p> .activities-container<br/>
+            .activities-title<br/>
+            .events<br/>
+        </p>
 
         <div class="activities-container">
         <h1 class="activities-title">Activities</h1>
 
         <div class="events">
-        <img src="activities-pic.png" alt="Activities" height="110" width="110">
+        <img src="activities-pic.png" alt="Activities">
         <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
         <div class="events">
-            <img src="activities-pic.png" alt="Activities" height="110" width="110">
+            <img src="activities-pic.png" alt="Activities">
             <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
         <div class="events">
-            <img src="activities-pic.png" alt="Activities" height="110" width="110">
+            <img src="activities-pic.png" alt="Activities">
             <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
         <div class="events">
-            <img src="activities-pic.png" alt="Activities" height="110" width="110">
+            <img src="activities-pic.png" alt="Activities">
             <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
         <div class="events">
-            <img src="activities-pic.png" alt="Activities" height="110" width="110">
+            <img src="activities-pic.png" alt="Activities">
             <p>Here is a description of an event happening at JavaJam with a small album photo for detail.</p></div>
+        </div>
+        <div class="container-components">
+        <pre>
+        <code>
+        &lt;div class="activities-container"&gt; 
+        &lt;h1 class="activities-title"&gt;Activities&lt;/h1&gt; 
+        
+        &lt;div class="events"&gt;
+            &lt;img src="activities-pic.png" alt="Activities"&gt; 
+            &lt;p&gt;Here is a description of an event happening at JavaJam with a small album photo for detail.&lt;/p&gt;&lt;/div&gt; 
+        &lt;div class="events"&gt; 
+            &lt;img src="activities-pic.png" alt="Activities"&gt; 
+            &lt;p&gt;Here is a description of an event happening at JavaJam with a small album photo for detail.&lt;/p&gt;&lt;/div&gt; 
+        &lt;div class="events"&gt; 
+            &lt;img src="activities-pic.png" alt="Activities"&gt; 
+            &lt;p&gt;Here is a description of an event happening at JavaJam with a small album photo for detail.&lt;/p&gt;&lt;/div&gt; 
+        &lt;div class="events"&gt; 
+            &lt;img src="activities-pic.png" alt="Activities"&gt; 
+            &lt;p&gt;Here is a description of an event happening at JavaJam with a small album photo for detail.&lt;/p&gt;&lt;/div&gt; 
+        &lt;div class="events"&gt; 
+            &lt;img src="activities-pic.png" alt="Activities"&gt; 
+            &lt;p&gt;Here is a description of an event happening at JavaJam with a small album photo for detail.&lt;/p&gt;&lt;/div&gt; 
+        &lt;/div&gt;
+        </code>
+        </pre>
         </div>
     </body>
 </html>
